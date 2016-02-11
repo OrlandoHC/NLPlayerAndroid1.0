@@ -1,0 +1,78 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        applicationId "io.gonative.android.eyxmd"
+        versionCode 24
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../../release.keystore")
+            storePassword "password"
+            keyAlias "release"
+            keyPassword "password"
+        }
+    }
+
+    buildTypes {
+        debug {
+	        applicationIdSuffix ".debug"
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+    flavorDimensions "crosswalk", "abi"
+
+    productFlavors {
+        normal {
+            dimension "crosswalk"
+        }
+        xwalk {
+            dimension "crosswalk"
+        }
+
+        generic {
+            dimension "abi"
+        }
+        x86 {
+            dimension "abi"
+            ndk {
+                abiFilters "x86", ""
+            }
+        }
+        arm {
+            dimension "abi"
+            ndk {
+                abiFilters "armeabi-v7a", ""
+            }
+        }
+
+    }
+}
+
+dependencies {
+    xwalkCompile 'org.xwalk:xwalk_core_library:16.45.421.19'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.google.android.gms:play-services-gcm:7.8.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+repositories {
+    maven {
+        url 'https://download.01.org/crosswalk/releases/crosswalk/android/maven2'
+    }
+}

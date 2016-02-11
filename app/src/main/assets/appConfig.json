@@ -1,0 +1,265 @@
+{
+  "general": {
+    "userAgentRegexes": [],
+    "replaceStrings": [],
+    "deviceRegKey": "35vjf88hvrwum08j30z5rvebtr",
+    "publicKey": "eyxmd",
+    "appName": "NLPlayer",
+    "initialUrl": "http://orlandohc.ddns.net/nlplayer/android",
+    "useWKWebView": true,
+    "userAgentAdd": "gonative"
+  },
+  "navigation": {
+    "androidPullToRefresh": true,
+    "iosPullToRefresh": true,
+    "tabNavigation": {
+      "tabSelectionConfig": [
+        {
+          "id": "1",
+          "regex": ""
+        }
+      ],
+      "tabMenus": [
+        {
+          "id": "1",
+          "items": []
+        }
+      ],
+      "active": false
+    },
+    "sidebarNavigation": {
+      "menuSelectionConfig": {
+        "redirectLocations": [
+          {
+            "regex": null,
+            "menuName": "default",
+            "loggedIn": false
+          },
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ],
+        "testURL": null
+      },
+      "menus": [
+        {
+          "name": "default",
+          "active": true,
+          "items": [
+            {
+              "label": "NLPlayer",
+              "url": "http://orlandohc.ddns.net/nlplayer/android",
+              "icon": "fa-music",
+              "subLinks": []
+            },
+            {
+              "label": "Wiki",
+              "url": "http://www.orlandohc.org/2015/08/nowlistening-web-player-zeus-radio.html",
+              "icon": "fa-file-text",
+              "subLinks": []
+            },
+            {
+              "label": "Blog",
+              "url": "http://www.orlandohc.org/",
+              "icon": "fa-shield",
+              "subLinks": []
+            },
+            {
+              "label": "Author",
+              "url": "https://twitter.com/orlandohc",
+              "icon": "fa-twitter",
+              "subLinks": []
+            }
+          ]
+        },
+        {
+          "name": "loggedIn",
+          "active": false,
+          "items": [
+            {
+              "label": "Sample Home",
+              "url": "http://orlandohc.ddns.net/nlplayer/home",
+              "subLinks": []
+            },
+            {
+              "label": "Sample About",
+              "url": "http://orlandohc.ddns.net/nlplayer/about",
+              "subLinks": []
+            }
+          ]
+        }
+      ]
+    },
+    "regexInternalExternal": {
+      "rules": [
+        {
+          "regex": "mailto:.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/login.php.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/dialog.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v1\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/oauth.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v2\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/checkpoint.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*plus\\.google\\.com/share.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*twitter\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://maps\\.google\\.com.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*",
+          "internal": false
+        },
+        {
+          "regex": ".*",
+          "internal": true
+        }
+      ],
+      "active": false
+    },
+    "navigationTitles": {
+      "titles": [
+        {}
+      ],
+      "active": false
+    },
+    "redirects": [],
+    "ignorePageFinishedRegexes": [],
+    "toolbarNavigation": null,
+    "navigationLevels": {
+      "levels": [
+        {}
+      ],
+      "active": false
+    },
+    "iosShowRefreshButton": false,
+    "androidShowRefreshButton": false
+  },
+  "styling": {
+    "transitionInteractiveDelayMax": 0.2,
+    "menuAnimationDuration": 0.15,
+    "iosLaunchImages": {
+      "ios_launch_640x960": "uploads/1453842689306_vv0e3qfzjunxj_640x960.gif",
+      "ios_launch_640x1136": "uploads/1453842689312_vqz1zydm09706_640x1136.gif",
+      "ios_launch_768x1024": "uploads/1453842689318_m8jpghw8f2nnp_768x1024.gif",
+      "ios_launch_1024x768": "uploads/1453842689324_ehhe6xt09m08m_1024x768.gif",
+      "ios_launch_1536x2048": "uploads/1453842689331_8ej4tabtx8k1u_1536x2048.gif",
+      "ios_launch_2048x1536": "uploads/1453842689344_w6gjqrd9uzn3p_2048x1536.gif",
+      "ios_launch_750x1334": "uploads/1453842689365_0vmk4hcejukcu_750x1334.gif",
+      "ios_launch_1242x2208": "uploads/1453842689375_5yu0ck5a0w56j_1242x2208.gif",
+      "ios_launch_2208x1242": "uploads/1453842689394_287hxvw4z5bj6_2208x1242.gif"
+    },
+    "androidShowSplash": false,
+    "disableAnimations": false,
+    "hideWebviewAlpha": 0.5,
+    "androidHeaderImage": "/uploads/1453842256716_mpy516hfutr4e_mymusic.gif",
+    "navigationTitleImageLocation": "/uploads/1453842684835_vcnyxwwfp52va_mymusic.gif",
+    "androidStatusBarBackgroundColor": "#7e7a7d",
+    "navigationTitleImage": true,
+    "iosSidebarTextColor": "#333333",
+    "iosTintColor": "#0091fe",
+    "iosTitleColor": "#333333",
+    "androidTabBarIndicatorColor": "#8F8F8F",
+    "androidTabBarTextColor": "#575757",
+    "androidTabBarBackgroundColor": "#212121",
+    "androidSidebarSeparatorColor": "#818285",
+    "androidAccentColor": "#80cbc4",
+    "androidPullToRefreshColor": "#777777",
+    "androidActionBarForegroundColor": "#FFFFFF",
+    "androidActionBarBackgroundColor": "#ABA7AA",
+    "androidSidebarForegroundColor": "#f3f3f3",
+    "androidSidebarBackgroundColor": "#333333",
+    "androidTheme": "dark",
+    "iosTheme": "light",
+    "androidHideTitleInActionBar": false,
+    "iosSidebarFont": "Default",
+    "showNavigationBar": true,
+    "showActionBar": true,
+    "iosHeaderImage": "/uploads/1453842092654_bca6qv2tan4mr_mymusic.gif",
+    "icon": "uploads/1453836225898_5ptk8pv1a61fa_logo_music_nlplayer.gif",
+    "androidLaunchImages": {}
+  },
+  "forms": {
+    "interceptForms": {
+      "forms": []
+    },
+    "search": {
+      "active": false
+    },
+    "loginConfig": {
+      "formInputs": [],
+      "loginIsFirstPage": false,
+      "formSelector": null
+    },
+    "signupConfig": {
+      "formInputs": [],
+      "formSelector": null,
+      "active": false
+    }
+  },
+  "permissions": {
+    "usesGeolocation": true
+  },
+  "publishing": {},
+  "performance": {
+    "webviewPools": [
+      {
+        "urls": [
+          {
+            "disown": "reload"
+          }
+        ]
+      }
+    ]
+  },
+  "services": {
+    "push": {
+      "active": false
+    },
+    "analytics": {
+      "idsite_test": 62997,
+      "idsite_prod": 62996,
+      "active": false
+    }
+  }
+}
