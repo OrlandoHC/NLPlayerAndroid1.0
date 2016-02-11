@@ -10,5 +10,3 @@ Import into Android Studio. Edit appConfig.json as appropriate.
 Licensing information available at https://gonative.io/.
 
 Licenced on GNU GPL 3 - NOW AVAILABLE FOR DOWNLOAD AT http://orlandohc.ddns.net/nlplayer/app
-
-UNSIGNES
